@@ -17,4 +17,9 @@ def create_app():
         users = User.query.all()
         return render_template('base.html', title='Home', users=users)
 
+    @app.route('/reset')
+    def reset():
+        DB.drop_all()
+        DB.create_all()
+        return render_template('base.html', title='DB reset', users=[])
     return app
