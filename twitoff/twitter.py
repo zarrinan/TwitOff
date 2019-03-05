@@ -1,4 +1,5 @@
 """Retrieve TWeets, embeddings, and persist in the database."""
+import basilica
 import tweepy
 from decouple import config
 from .models import DB, Tweet, User
@@ -10,3 +11,5 @@ TWITTER_AUTH.set_access_token(config('TWITTER_ACCESS_TOKEN'),
 TWITTER = tweepy.API(TWITTER_AUTH)
 
 BASILICA = basilica.Connection(config('BASILICA_KEY'))
+
+#todo: some
