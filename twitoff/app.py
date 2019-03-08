@@ -1,6 +1,6 @@
-"""Main application configuration and routing logic for TwitOff."""
+"""Main application and routing logic for TwitOff."""
 from decouple import config
-from flask import Flask,render_template,request
+from flask import Flask, render_template, request
 from .models import DB, User
 from .predict import predict_user
 from .twitter import add_or_update_user
@@ -43,6 +43,7 @@ def create_app():
             prediction = predict_user(user1, user2,
                                       request.values['tweet_text'])
             return user1 if prediction else user2
+
 
     @app.route('/reset')
     def reset():

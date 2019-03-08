@@ -12,7 +12,7 @@ TWITTER = tweepy.API(TWITTER_AUTH)
 
 BASILICA = basilica.Connection(config('BASILICA_KEY'))
 
-#TODO: some useful methods
+
 def add_or_update_user(username):
     """Add or update a user *and* their Tweets, error if no/private user."""
     try:
@@ -39,5 +39,3 @@ def add_or_update_user(username):
         raise e
     else:
         DB.session.commit()
-
-
