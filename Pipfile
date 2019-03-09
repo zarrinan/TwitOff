@@ -13,7 +13,7 @@ basilica = "*"
 python-decouple = "*"
 python-dotenv = "*"
 scikit-learn = "*"
-pickle = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"
