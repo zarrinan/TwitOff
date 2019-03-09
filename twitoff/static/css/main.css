@@ -56,18 +56,21 @@ body {
 }
 
 .submit {
-  background-color: #6593f5;
-  height: 30px;
+  background-color: #4076f9;
+  height: 35px;
   border: solid grey 1.5px;
   border-radius: 5px;
   box-shadow: 2px;
-  color: #4c4c4c;
+  color: #fff;
   width: 155px;
   padding: 2px 5px;
   font-weight: 100;
   letter-spacing: 0.5px;
 }
 
+.compare-input {
+  height: 40px;
+}
 select {
   margin: 5px;
   width: 200px;
@@ -78,6 +81,8 @@ input {
   display: inline-block;
   font-size: 20px;
   margin: 5px 0;
+  height: 28px;
+
   text-align: center;
   line-height: 20px;
   padding: 2px;
@@ -89,3 +94,5 @@ select, input {
   border: solid #A9A9A9 2px;
   font-size: 20px;
 }
+
+
